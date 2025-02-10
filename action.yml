@@ -2,10 +2,10 @@ name: '"Configure Alibaba Cloud Credentials" Action for GitHub Actions'
 description: 'Configures Alibaba Cloud credentials for use in subsequent steps in a GitHub Action workflow'
 inputs:
   oidc-provider-arn:
-    description: 'The ARN of OIDC provider. format: acs:ram::USER_Id:oidc-provider/ROLE_NAME'
+    description: 'acs:ram::1359586354711636:oidc-provider/Github-Action'
     required: false
   role-to-assume:
-    description: 'Required for OIDC user. The ARN of role to assume. format: acs:ram::USER_Id:role/ROLE_NAME'
+    description: 'acs:ram::1359586354711636:role/github-action'
     required: false
   role-session-expiration:
     description: "Role roleSessionExpiration in seconds (default: 1800 seconds)"
